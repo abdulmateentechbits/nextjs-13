@@ -7,8 +7,96 @@
   min-height: 100vh;
 }
 
-.paragraph{
+.paragraph {
   font-size: large;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+
+.wrapper {
+  width: 90%;
+  margin: 70px auto;
+}
+
+/* Style the product list container */
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Style each product item */
+.productItem {
+  width: 250px;
+  height: 350px;
+  background: var(--tile-start-rgb);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the product link */
+.productLink {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Style the product thumbnail */
+.productThumbnail img {
+  max-width: 100%;
+  flex-grow: 1;
+}
+
+
+/* Change link color on hover */
+.productLink:hover {
+  color: #0071ff;
+}
+
+
+/* Style the product details */
+.productDetails {
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 0 0 12px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.productTitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.productPrice {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0071ff;
+}
+
+.productRating {
+  font-size: 1rem;
+  color: #777;
+  margin-top: 8px;
+}
+
+/* Other styles as needed */
+
+/* Hover effect for product items */
+.productItem:hover {
+  transform: translateY(-5px);
+  background: var(--tile-end-rgb);
+}
+
